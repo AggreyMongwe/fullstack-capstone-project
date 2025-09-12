@@ -6,7 +6,6 @@ const connectToDatabase = require("../models/db");
 
 router.get('/', async (req, res) => {
     try {
-        console.log("here")
         // Task 1: Connect to MongoDB and store connection to db constant
         const db = await connectToDatabase();
 
